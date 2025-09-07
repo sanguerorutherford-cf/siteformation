@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+
+  <!-- Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="form.png">
+
+  <style>
+    /* === STYLE CSS === */
+
+    * { margin: 50; padding: 50; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #335;
+    }
+
+    header {
+      background: #225;
+      background: #220;
+      color: #fff;
+      padding: 1rem 30;
+      text-align: left;
+      position: sticky;
+      top: 1;
+      z-index: 900;
+    }
+
+    header h1 { margin-right: 0.4rem; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: right;
+      flex-wrap: wrap;
+    }
+
+    nav ul li { margin: 0 8px; }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.5s ease;
+    }
+    nav ul li a:hover { color: #f39c20; }
+
+    main {
+      padding: 1rem;
+      max-width: 2500px;
+      margin: auto;
+      background: #ffe;
+      border-radius: 30px;
+      box-shadow: 1 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      color: #222;
+      border-left: 5px solid #f39c12;
+      padding-left: 10px;
+    }
+
+    /* Section accueil */
+    #accueil {
+      text-align: center;
+    }
+    #accueil img {
+      width: 180px;
+      height: 180px;
+      border-radius: 70%;
+      margin: 1rem 1;
+      border: 5px solid #f39c14;
+    }
+
+    /* Compétences */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      gap: 10px;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .skill-card {
+      background: #f9f9f7;
+      padding: 1rem;
+      border-radius: 5px;
+      transition: transform 0.1s ease;
+    }
+    .skill-card:hover { transform: scale(1.05); }
+    .skill-card i {
+      font-size: 1rem;
+      margin-bottom: 0.1rem;
+      color: #f39c12;
+    }
+
+    /* Projets */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 5px;
+      margin-top: 0rem;
+    }
+    .project-card {
+      border: 10px solid #ddd;
+      border-radius: 40px;
+      overflow: hidden;
+      transition: transform 0.0s ease;
+      background: #fff;
+    }
+    .project-card img {
+      width: 80%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project-card h3 { margin: 0.5rem; }
+    .project-card p { margin: 0.5rem; }
+    .project-card:hover {
+      transform: scale(2.03);
+      border-color: #f33c20;
+    }
+
+    form button {
+      background: #f29c15;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 2px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover { background: #d25300; }
+
+    footer {
+      text-align: center;
+      padding: 0.1rem;
+      background: #080;
+      color: #fff;
+      margin-top: 0.2rem;
+    }
+
+    /* Effet fade-in */
+    section, article {
+      opacity: 1;
+      transform: translateY(5px);
+      transition: all 0.1s ease-out;
+    }
+    section.visible, article.visible {
+      opacity: 2;
+      transform: translateY(0);
+    }
+
+   
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>SANGUERO MADJIKIDJO Rutherford</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+  
+   <!-- Accueil -->
+   <div>
+    <section id="accueil">
+	 <div>
+	  <div>
+	  <div>
+	  <div>
+      <h2>Bienvenue sur ma page</h2>
+      <img src="profil.jpg" alt="Photo de profil">
+      <p>Bonjour, je suis <strong>SANGUERO MADJIKIDJO Rutherford</strong>, passionné par le développement web. Explorez mon portfolio pour découvrir mes compétences et projets.</p>
+	  <li><a href="#projects">Voir mes Projets</a></li>
+    </div>
+	</div>
+	</div>
+	</div>
+	</section>
+	</div>
+	
+	
+    <!-- À propos -->
+    <section id="about">
+	 <div>
+	  <div>
+      <h2>À propos de moi</h2>
+      <p>Je m'appelle SANGUERO MADJIKIDJO Rutherford J’aime coder et créer des solutions numériques adaptées aux besoins modernes.</p>
+	  </div>
+	  </div>
+    </section>	
+	
+	   <!-- Projets -->
+	   
+    <div>
+	<section id="projects">
+	<div>
+	<div>
+	<div>
+	<div>
+      <h2>Mes Projets</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="logo_beafricacore.png" alt="Site BEAFRICACORE">
+          <h3>Réalisation de site de BEAFRICACORE</h3>
+          <p>Un sit <a href="#">Voir plus</a></p>
+        </div>
+        <div class="project-card">
+          <img src="LOGO RTN.png" alt="RTN Services">
+          <h3>Création graphique</h3>
+          <p>Logo de RTN Service. <a href="#">Voir plus</a></p>
+        </div>
+        <div class="project-card">
+          <img src="form.png" alt="Formation">
+          <h3>Formations</h3>
+          <p>Je dispense aussi des formartions <a href="#">Voir plus</a></p>
+        </div>
+      </div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+    </section>
+	</div>
+   
+
+      <!-- Compétences -->
+    <section id="skills">
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS3</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <p>Gestion de projet</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <p>Data Science</p>
+        </div>
+      </div>
+    </section>    
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+  <section id="contact">
+      <h2>Vous avez un projet en tête? N'hésitez pas à me contacter</h2>
+      <form onsubmit="return validerFormulaire()">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
+      </form>
+    </section>
+    <p>&copy; 2025 Rutherford</p>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script>
+    // Validation formulaire
+    function validerFormulaire() {
+      let nom = document.getElementById("nom").value;
+      let email = document.getElementById("email").value;
+      if (nom === "" || email === "") {
+        alert("Veuillez remplir tous les champs !");
+        return false;
+      }
+      alert("Merci pour votre message !");
+      return true;
+    }
+
+    // Défilement fluide
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+
+    // Animation fade-in
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll("section, article").forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
