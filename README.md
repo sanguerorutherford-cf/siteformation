@@ -11,7 +11,7 @@ Ce projet est un site web simple en **HTML, CSS et JavaScript**, qui présente :
 
 ## 🚀 Déploiement
 Le site peut être consulté directement en ligne :  
-👉 [https://sanguerorutherford-cf.github.io/portfolio](https://sanguerorutherford-cf.github.io/portfolio)
+👉 [https://sanguerorutherford-cf.github.io/portfolio](https://siteformation.github.io/portfolio)
 
 ## 📂 Structure du projet
 - `portofolio.html` → Page principale  
